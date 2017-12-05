@@ -15,3 +15,9 @@ Such solution provides a minimal memory requirements (first value and a pair to 
 
 ## Part II
 In part two the solution is very easy but is memory more needy. The sequence must be cut to half and zip the sequences to pairs. Example on (1, 2, 3, 4) will generate ((1, 3), (2, 4)). Because the task is to be circular the missing pairs are ((3, 1), (4, 2)) which are the exactly reversed of the first two. So instead of doing special logic for this we just duplicate result from the first pairs.
+
+# Day2
+
+See source in Day02.fsx
+
+## Part I
