@@ -3,6 +3,8 @@ My solutions for the advent of code 2017 in FSharp
 
 # Day1
 
+See source in Day01.fsx
+
 ## Part I
 Naive solution would be to iterate through list and compare the value with the next one. There is an exception when you come to the end of the list is to load first element.
 For that we use Seq.pairwise which already provides pair sequence generation. Example on (1, 2, 3, 4) will generate ((1, 2), (2, 3), (3, 4)). With that in mind the problme is almost solved. Only the exception is not handled. I've decided that if I put a copy of the first element at the end I would get what I need. So on example I would have sequence (1, 2, 3, 4, 1) which will generate additional pair ((1, 2), (2, 3), (3, 4), (4, 1)). I achieve that by calling Seq.append. 
